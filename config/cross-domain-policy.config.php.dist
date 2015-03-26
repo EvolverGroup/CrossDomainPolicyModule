@@ -1,0 +1,48 @@
+<?php
+
+return [
+    'crossdomain' => [
+
+        // Content-Type header
+        'content_type' => 'text/x-cross-domain-policy',
+
+        // Cross-Domain policy definition, see
+        // http://www.adobe.com/devnet-docs/acrobatetk/tools/AppSec/CrossDomain_PolicyFile_Specification.pdf
+        'policy' => [
+
+            // Meta policy: `none`, `master-only`, `by-content-type`, `by-ftp-filename` or `all`
+            'site_control' => 'master-only',
+
+            // Grant access by domain
+            'allow_access' => [
+                [
+                    'domain' => '*.example.com'
+                ], [
+                    'domain' => 'www.example.com',
+                    'ports' => 80,
+                    'secure' => false
+                ]
+            ],
+
+            // Grant access for special request headers
+            'allow_headers' => [
+                [
+                    'domain' => '*.adobe.com',
+                    'headers' => 'SOAPAction'
+                ]
+            ],
+
+            // Grant access by identity
+            'allow_access_identity' => [
+                [
+                    'signatory' => [
+                        'certificate' => [
+                            'fingerprint' => '01:23:45:67:89:ab:cd:ef:01:23:45:67:89:ab:cd:ef:01:23:45:67',
+                            'algorithm' => 'sha-1'
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+];

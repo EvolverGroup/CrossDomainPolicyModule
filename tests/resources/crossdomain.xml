@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd">
+
+<cross-domain-policy>
+    <site-control permitted-cross-domain-policies="master-only"/>
+    <allow-access-from domain="*.example.com"/>
+    <allow-access-from domain="www.example.com" to-ports="80" secure="false"/>
+    <allow-http-request-headers-from domain="*.adobe.com" headers="SOAPAction"/>
+    <allow-access-from-identity>
+        <signatory>
+            <certificate
+                fingerprint="01:23:45:67:89:ab:cd:ef:01:23:45:67:89:ab:cd:ef:01:23:45:67"
+                fingerprint-algorithm="sha-1"/>
+        </signatory>
+    </allow-access-from-identity>
+</cross-domain-policy>
