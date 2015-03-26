@@ -27,7 +27,8 @@ Then add `Evolver\\CrossDomainPolicyModule` to your application config.
 ## Usage
 
 Copy and rename the `config/cross-domain-policy.config.php.dist` to your application autoload folder. Then customize the
-config for your needs. Visit the [Cross-domain policy file specification](http://www.adobe.com/devnet-docs/acrobatetk/tools/AppSec/CrossDomain_PolicyFile_Specification.pdf)
+config for your needs.
+Visit the [Cross-domain policy file specification](http://www.adobe.com/devnet-docs/acrobatetk/tools/AppSec/CrossDomain_PolicyFile_Specification.pdf)
 for details.
 
 You may now invoke yor application via HTTP. The route `/crossdomain.xml` will point on the resulting cross-domain
