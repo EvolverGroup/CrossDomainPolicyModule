@@ -5,7 +5,7 @@ Zend Framework 2 Module to provide cross-domain policy files
 [![Packagist](https://img.shields.io/packagist/v/evolver/cross-domain-policy-module.svg)](https://packagist.org/packages/evolver/cross-domain-policy-module)
 [![Downloads](https://img.shields.io/packagist/dt/evolver/cross-domain-policy-module.svg)](https://packagist.org/packages/evolver/cross-domain-policy-module)
 [![License](https://img.shields.io/packagist/l/evolver/cross-domain-policy-module.svg)](https://packagist.org/packages/evolver/cross-domain-policy-module)
-[![Build](https://img.shields.io/travis/EvolverGroup/CrossDomainPolicy.svg)](https://travis-ci.org/EvolverGroup/CrossDomainPolicy)
+[![Build](https://img.shields.io/travis/EvolverGroup/CrossDomainPolicyModule.svg)](https://travis-ci.org/EvolverGroup/CrossDomainPolicyModule)
 
 ## Requirements
 
