@@ -1,4 +1,4 @@
-# Diagnostics
+# CrossDomainPolicyModule
 
 Zend Framework 2 Module to provide cross-domain policy files
 
